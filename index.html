@@ -55,6 +55,18 @@
           Welcome Spotify users! Save on registration using code SPOTIFY
       </div>
     </div>
+
+    <div
+      style="background: ##00a85b;"
+      class="hide"
+      id="gazetteAd"
+    >
+      <div
+        class="container text-center text-white py-3"
+      >
+          Welcome Pittsburgh Post Gazette users! Save on registration using code GAZETTE
+      </div>
+    </div>
     
     <!-- banner -->
     <div
@@ -722,6 +734,8 @@
       var ref = urlParams.get('ref').toLowerCase();
       if (ref == 'spotify') {
         document.getElementById("spotifyAd").classList.remove('hide');
+      } else if (ref == 'gazette') {
+        document.getElementById("gazetteAd").classList.remove('hide');
       }
     </script>
   </body>

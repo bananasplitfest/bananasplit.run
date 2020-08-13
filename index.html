@@ -57,7 +57,19 @@
     </div>
 
     <div
-      style="background: ##00a85b;"
+      style="background: #df4400;"
+      class="hide"
+      id="parksrecAd"
+    >
+      <div
+        class="container text-center text-white py-3"
+      >
+          Welcome GLSD Parks & Rec visitors! Save on registration using code PARKS
+      </div>
+    </div>
+
+    <div
+      style="background: #00a85b;"
       class="hide"
       id="gazetteAd"
     >
@@ -736,6 +748,8 @@
         document.getElementById("spotifyAd").classList.remove('hide');
       } else if (ref == 'gazette') {
         document.getElementById("gazetteAd").classList.remove('hide');
+      } else if (ref == 'parksrec') {
+        document.getElementById("parksrecAd").classList.remove('hide');
       }
     </script>
   </body>
